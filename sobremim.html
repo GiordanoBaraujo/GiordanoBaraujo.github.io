@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Chamei a class nome para criar o design do nome, formatando e mudando o estilo */
+       .nome{ 
+            color: #111;
+            text-align: center;    
+            font-family: fantasy;
+            font-size: 50px;
+            text-shadow: 2px 2px white;
+        }   
+        /* Aqui usei as seguintes informações para centralizar a imagem e colocar um borda arredondada */
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            padding: 0%;
+            width: 20%;
+            height: 20%;
+                      
+        }
+        /* Fiz mudança dos seletores de navegação das paginas */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+        li {
+            float: left;
+            }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        /* Usei pseudo-classe para para dar efeito de cor nas barras de navegação  */
+        li a:hover:not(.active) {
+            background-color: #111;
+            }
+
+        .active {
+            background-color: #04AA6D;
+            }
+        .cabecalio{
+            border: 10px solid black;
+        }
+        .cabecalio{
+            background-color: #04AA6D;
+        }
+        /* Troquei a cor de fundo da pagina */ 
+        html{
+            background-color: #04AA6D;
+        }
+        .conteudo{
+            background-color: white;
+            padding: 15px;
+            width: 1200px;
+            text-shadow: 1px 1px #04AA6D ;
+            text-align: justify;
+            font-family: fantasy;
+            font-size: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        </style>
+
+     
+</head>
+<body>
+    <header>
+        <div class="cabecalio">
+            <h1 class="nome">Giordano Barbosa Araújo</h1>
+            <img class="imagem" src="file.png">
+        </div>
+    </header>
+    <div class="navegacao">
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="sobremim.html">Sobre mim</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+        </ul>
+    </div>
+    <br>       
+    
+        <div class="conteudo" style="border: 10px solid black;" >
+            <!--Usei uma div para colocar informações sobre mim-->
+            Me chamo Giordano Barbosa, tenho 25 anos, moro no Rio de Janeiro, tenho uma irmã mais velha. Curso Analise e Desenvolvimento de sistemas, mas vim de uma área totalmente diferente da Tecnologia,
+            pois fui estudante de Nutrição até o 5° período, onde migrei para o curso no começo do ano de 2024, onde tomei a decisão pelo fato de ter me encontrado mais nessa área. 
+            <hr>Sempre fui um amante de computadores, sendo assim, tenho ele como o meu maior hobbie, onde a maior parte do meu tempo livre estou jogando ou navegando pela internet, isso contribuiu muito para a minha escolha profissional, já que criei um grande
+            gosto pela criação e Desenvolvimento de projetos web, hobbie esse onde consigo por toda a minha criatividade e agilidade para a criação de ferramentas que vão agregar no meu dia a dia e no meu ambiente de Trabalho.<hr>
+            Já que mesmo não atuando na área utilizo do meu conhecimento para criar conteúdos online para melhor performance com as vendas, que é a atual área em que eu trabalho. Gosto muito da área, pois a Tecnologia também
+            está muito ligada a comunicação, possuo uma boa base de Inglês, juntamente a uma enorme vontade de aprender e me desenvolver a cada dia mais profissionalmente e me tornar um bom profissional que cresce e aprende a cada dia mais.
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

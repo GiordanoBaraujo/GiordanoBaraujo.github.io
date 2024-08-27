@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Chamei a class nome para criar o design do nome, formatando e mudando o estilo */
+        .nome{ 
+            color: #111;
+            text-align: center;    
+            font-family: fantasy;
+            font-size: 50px;
+            text-shadow: 2px 2px white;
+        }   
+        /* Aqui usei as seguintes informações para centralizar a imagem e colocar um borda arredondada */
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            padding: 0%;
+            width: 20%;
+            height: 20%;
+        }
+        /* Fiz mudança dos seletores de navegação das paginas */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+        li {
+            float: left;
+            }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        /* Usei pseudo-classe para para dar efeito de cor nas barras de navegação  */
+        li a:hover:not(.active) {
+            background-color: #111;
+            }
+
+        .active {
+            background-color: #04AA6D;
+            }
+        .cabecalio{
+            border: 10px solid black;
+        }   
+        /* Troquei a cor de fundo da pagina */ 
+        html{
+            background-color: #04AA6D;
+        }
+        .conteudo{
+            background-color: white;
+            padding: 15px;
+            width: 1200px;
+            text-shadow: 1px 1px #04AA6D ;
+            text-align: justify;
+            font-family: fantasy;
+            font-size: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        </style>
+        
+     
+</head>
+<body>
+    <header>
+        <div class="cabecalio">
+            <h1 class="nome">Giordano Barbosa Araújo</h1>
+            <img class="imagem" src="file.png">
+        </div>
+    </header>
+    <div class="navegacao">
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="sobremim.html">Sobre mim</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="portifolio.html">Porifólio</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <div class="conteudo" style="border: 10px solid black;" >
+        <!--Utilizei inputs para por nome, email e um textarea para o envio de mensagens-->
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <table>
+                <input type="hidden" name="accessKey" value="4ace7a5c-0ebb-4a02-b858-dc03b6b7383d">
+                <tr>
+                    <th><label for="name">Nome:</label></th>
+                    <td><input type="text" id="name" name="name"><br></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label><br></th>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <th><label for="message">Mensagem:</label></th>
+                    <td><textarea for="message" rows="5" cols="40">Digite sua mensagem</textarea></td>
+                    <!--No textarea determinei o tamanho da área para envio de mensagens-->
+                </tr>
+                <td></td>
+                <td><button>Emviar</button></td>
+            </table>
+          </form>
+
+        
+
+    </div>
+
+    
+</body>
+</html>
