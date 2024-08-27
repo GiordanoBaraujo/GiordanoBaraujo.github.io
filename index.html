@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+        /* Chamei a class nome para criar o design do nome, formatando e mudando o estilo */ 
+        .nome{ 
+            color: #111;
+            text-align: center;    
+            font-family: fantasy;
+            font-size: 50px;
+            text-shadow: 2px 2px white;
+        }
+        /* Aqui usei as seguintes informações para centralizar a imagem e colocar um borda arredondada */
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            padding: 0%;
+            width: 20%;
+            height: 20%;
+            
+                                 
+        }
+        /* Fiz mudança dos seletores de navegação das paginas */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+        li {
+            float: left;
+            }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        /* Usei pseudo-classe para para dar efeito de cor nas barras de navegação  */
+        li a:hover:not(.active) {
+            background-color: #111;
+            }
+
+        .active {
+            background-color: #04AA6D;
+            }
+        .cabecalio{
+            border: 10px solid black;
+            padding: 20px;
+
+        }  
+        /* Troquei a cor de fundo da pagina */      
+        html{
+            background-color: #04AA6D;
+        }
+        .colunas{
+            background-color: white;
+            padding: 15px;
+            width: 700px;
+            text-shadow: 1px 1px #04AA6D ;
+            font-family: fantasy;
+            font-size: 30px;
+        }
+
+        </style>
+        
+     
+</head>
+<body>
+    <!--Usei o header para criar um cabeçalio com o meu nome e uma fotografia minha-->
+    <header>
+        <div class="cabecalio">
+            <h1 class="nome">Giordano Barbosa Araújo</h1>
+            <img class="imagem" src="file.png">
+        </div>
+    </header>
+    <!--Aqui criei uma div para colocar os links externos do meu projeto-->
+    <div class="navegacao">
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="sobremim.html">Sobre mim</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+        </ul>
+    </div>
+    <br>
+
+
+    <!--Criei uma caixa para ser uma mensagem de boas vinda logo no inicio do site-->
+    <div class="colunas" style="border: 10px solid black;" >
+        <h1>Bem vindo ao meu site</h1>             
+    </div>
+
+</body>
+</html>
